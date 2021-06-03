@@ -1,0 +1,87 @@
+/* @media screen responsive mobile */
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    margin: 0;
+  }
+
+  .p-rl-15 {
+    padding: 0;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    visibility: hidden;
+  }
+
+  .nav-menu.active {
+    top: 6.2rem;
+    visibility: visible;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .resto {
+    gap: 0 !important;
+  }
+
+  .resto-title {
+    grid-column-end: auto !important;
+  }
+
+  .resto-poster {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+  .search-container {
+    flex-direction: column;
+    position: static;
+  }
+
+  .search-container > input {
+    width: 100% !important;
+    margin-bottom: 12px;
+  }
+
+  .search-container > button {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}

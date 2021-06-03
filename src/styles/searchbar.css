@@ -1,0 +1,35 @@
+.search-container {
+  max-width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  border-radius: 5px;
+  display: flex;
+  background-color: white;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.search-container > input {
+  width: 100%;
+  padding: 16px;
+  border: 0;
+  border-bottom: 1px solid cornflowerblue;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.search-container > input:focus {
+  outline: 0;
+  border-bottom: 2px solid cornflowerblue;
+}
+
+.search-container > input:focus::placeholder {
+  font-weight: bold;
+}
+
+.search-container > input::placeholder {
+  color: cornflowerblue;
+  font-weight: normal;
+}

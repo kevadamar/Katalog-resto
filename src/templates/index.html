@@ -5,57 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#37003D">
-    <meta name="description" content="Resto-Keva Damar Galih" />
+    <meta name="description" content="Resto-Keva Damar Galih, restaurant viral, resto finder, restaurant mewah, resto murah, restaurant serba ada, google, nasi padang" />
     <meta name="author" content="keva damar galih">
-    <title>Restaurant Apps Starter Project</title>
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <link rel="icon" href="/icons/icon-192x192.png">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <title>K-Resto</title>
+    <link rel="manifest" href="manifest.json">
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
 </head>
 
 <body>
-    <a href="#content" class="skip-to-content">Skip to content ?</a>
-    <div class="container">
-        <!-- Header Navigation -->
-        <header class="header p-rl-15 bg-aliceblue">
-            <nav class="navbar">
-                <a href="/" class="nav-logo">K-Resto</a>
-                <a href="#" class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </a>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Favorite</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://kevadamargalih.netlify.app" target="_blank" class="nav-link">About Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+    <skip-content></skip-content>
+    <!-- Header Navigation -->
+    <app-bar></app-bar>
 
-        <!-- jumbotron -->
-        <div class="container d-flex-center" style="background-image: url(images/heros/hero-image_3.jpg);">
-            <h1 style="color: white;">K-Resto</h1>
-        </div>
+    <!-- main content -->
+    <main-content></main-content>
 
-        <!-- main content -->
-        <main id="content">
-            <section id="content">
-                <div class="body-content">
-                    <h1 style="font-size: 2rem;">Explore Restaurant</h1>
-                    <div class="list" id="contentList"></div>
-                </div>
-            </section>
-        </main>
+    <!-- Footer -->
 
-        <!-- Footer -->
-        <footer class="bg-aliceblue">
-            <p>Copyright © 2021 - K-Resto</p>
-        </footer>
-    </div>
+    <footer-bar></footer-bar>
 </body>
 
 </html>
