@@ -127,7 +127,7 @@ a {
 
 .button-detail {
   border: none;
-  padding: 0px;
+  padding: 0;
   background-color: transparent;
   margin-top: 4px;
   color: steelblue;
@@ -146,6 +146,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  z-index: 1000;
 }
 
 .nav-menu {
@@ -153,6 +154,7 @@ a {
   justify-content: space-between;
   align-items: center;
   visibility: visible;
+  z-index: 100;
 }
 
 .nav-item {
