@@ -5,7 +5,7 @@ import HomeResto from '../views/pages/home-resto';
 
 const routes = {
   '/': HomeResto, // default page
-  '/now-playing': HomeResto,
+  '/home': HomeResto,
   '/favorite': Favorite,
   '/detail/:id': Detail,
   '/404': PageNotFound,

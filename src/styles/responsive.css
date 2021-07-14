@@ -1,5 +1,9 @@
 /* @media screen responsive mobile */
 @media only screen and (max-width: 768px) {
+  .hero-image {
+    background-image: url('/images/hero-image-sm.jpg');
+  }
+
   .container-fluid {
     margin: 0;
   }

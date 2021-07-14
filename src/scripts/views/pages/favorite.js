@@ -24,7 +24,7 @@ const Favorite = {
         'style',
         'grid-template-columns:auto !important',
       );
-      restaurantsContainer.innerHTML = '<span style="width:100%;text-align:center;margin-top: 40vh;"><h2>Resto Favoritemu masih kosong....</h2></span>';
+      restaurantsContainer.innerHTML = '<span id="fav-empty" style="width:100%;text-align:center;margin-top: 40vh;"><h2>Resto Favoritemu masih kosong....</h2></span>';
     }
   },
 };

@@ -331,3 +331,7 @@ footer {
   min-width: 44px;
   min-height: 44px;
 }
+
+.hero-image {
+  background-image: url('/images/hero-image-xl.jpg');
+}

@@ -2,7 +2,7 @@ import CONFIG from '../../globals/config';
 
 const createCardRestoItemTemplate = (data) => `
 <div class="item">
- <img class="item-image" src="${
+ <img class="item-image lazyload" data-src="${
   data.pictureId
     ? CONFIG.BASE_IMAGE_URL + data.pictureId
     : 'https://picsum.photos/id/666/800/450?grayscale'
@@ -24,7 +24,7 @@ const createCardRestoItemTemplate = (data) => `
 
 const createDetailRestoItemTemplate = (data) => `
 <p class="resto-title">${data.name}</p>
-<img class="resto-poster" src="${
+<img class="resto-poster lazyload" data-src="${
   CONFIG.BASE_IMAGE_URL + data.pictureId
 }" alt="${data.name}" />
 <div class="font-med resto-info p-all-16">
